@@ -1,0 +1,20 @@
+/*==================== COMPONENTS > ICONS ====================*/
+
+.icono {
+  color: $color-principal;
+  line-height: 1rem;
+  text-decoration: none;
+}
+
+$iconos: (
+  'linkedin':  #0a66c2,
+  'instagram': #c92b83,
+  'twitter':   #1d9bf0
+);
+
+@each $red, $color in $iconos {
+  .icono--#{$red}:hover {
+    color: $color;
+    text-decoration: none;
+  }
+}

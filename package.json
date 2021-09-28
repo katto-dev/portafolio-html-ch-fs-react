@@ -1,0 +1,20 @@
+{
+  "name": "my-sass",
+  "version": "1.0.0",
+  "description": "My SASS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/mainSCSS.scss css/mainCSS.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "my-sass"
+  ],
+  "author": "Damián Navia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}

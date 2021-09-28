@@ -1,0 +1,128 @@
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'base/base';
+@import 'base/typos';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'components/containers';
+@import 'components/buttons';
+@import 'components/divisors';
+@import 'components/icons';
+@import 'components/pins';
+@import 'components/texts';
+@import 'components/titles';
+
+@import 'pages/home';
+@import 'pages/portfolio';
+@import 'pages/about';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+/*
+----------------------------
+# PASOS PREVIOS IMPORTANTES:
+----------------------------
+1) Ejecutar "npm init", para que se cree el archivo "package.json" (desde la raiz del proyecto): 
+    $ npm init
+2) Instalar los módulos "node-sass" y "nodemon" (desde la raiz del proyecto): 
+    $ npm install -D node-sass nodemon
+3) Crear las carpetas SCSS y CSS y sus archivos respectivos.
+4) Edita el archivo "package.json" e inserta las lineas "build-css" y "watch-css" dentro de "scripts":
+--- Código modificado ---
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/sass.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+---
+5) Ejecutar "npm run watch-css", para que el compilador se quede mirando las modificaciones en el archivo ".scss".
+  $ npm run watch-css
+-----------------------------------
+# COMO RECREAR LOS MODULOS DE NODE:
+-----------------------------------
+a) Ejecutar "npm install", desde la raiz del proyecto (donde se ubica el archivo "package.json"):
+  $ npm install
+------------------------------------------------
+# COMO ORGANIZAR LOS ARCHIVOS SASS DEL PROYECTO:
+------------------------------------------------
+sass/
+|
+|– utilities/
+|   |– _variables.sass    // Variables
+|   |– _functions.sass    // Funciones
+|   |– _mixins.sass       // Mixins
+|   |– _placeholders.sass // Placeholders
+|
+|– base/
+|   |– _base.sass         // Base
+|   |– _reset.sass        // Reset/normalize
+|   |– _typo.sass         // Tipografías
+|
+|– components/
+|   |– _buttons.scss      // Buttons
+|   |– _jumbo.sass        // Jumbo
+|   |- _carousel.scss     // Carousel
+|   |- _thumbnails.scss   // Thumbnails
+|   |- _slider.scss       // Slider
+|
+|– layout/
+|   |– _grid.sass         // Grid
+|   |– _header.sass       // Header
+|   |– _navigation.sass   // Navegación
+|   |– _footer.sass       // Footer
+|   |– _forms.sass        // Formularios
+|   |- _sidebar.scss      // Sidebar
+|
+|– pages/
+|   |– _home.sass         // Estilos de la página de inicio
+|   |- _about.scss        // About styles
+|   |– _contact.sass      // Estilos de la página de contacto
+|
+|– themes/
+|   |– _theme.sass        // Default theme
+|   |– _admin.sass        // Admin theme
+|
+|– vendors/
+|   |– _normalize.sass    // Normalize
+|   |– _bootstrap.sass    // Bootstrap
+|   |– _jquery-ui.sass    // jQuery UI
+|   |– _select2-ui.sass    // Select 2
+|
+|– main.sass              // Archivo principal
+
+# En el archivo principal deberemos importar cada archivo:
+
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'utilities/bootstrap';
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typo';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/jumbo';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+*/

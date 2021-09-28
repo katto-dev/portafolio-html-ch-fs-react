@@ -1,0 +1,108 @@
+/*==================== COMPONENTS > TITLES ====================*/
+
+.titulo {
+  font-family: $fuente-personal;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.titulo--principal {
+  font-size: calc(2rem + 1vw);
+}
+
+.titulo--secundario {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.titulo--terciario {
+  font-size: calc(1.1rem + 1vw);
+}
+
+.titulo--resaltado {
+  color: $color-resaltado1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/*---------- ANIMACIONES ----------*/
+h1 {
+  animation-duration: 5s;
+  animation-name: aparecerH1;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+  animation-duration: 5s;
+  animation-name: aparecerH2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecerH1 {
+  0% {
+    color: $color-principal;
+    opacity: 1;
+  }
+  25% {
+    color: $color-principal;
+    opacity: 0.5;
+  }
+  50% {
+    color: $color-principal;
+    opacity: 1;
+  }
+  75% {
+    color: $color-principal;
+    opacity: 0.5;
+  }
+  100% {
+    color: $color-principal;
+    opacity: 1;
+  }
+}
+
+@keyframes aparecerH2 {
+  0% {
+    color: $color-principal;
+    opacity: 1;
+  }
+  10% {
+    color: $color-principal;
+    opacity: 0.8;
+  }
+  20% {
+    color: $color-principal;
+    opacity: 0.6;
+  }
+  30% {
+    color: $color-principal;
+    opacity: 0.4;
+  }
+  40% {
+    color: $color-principal;
+    opacity: 0.2;
+  }
+  50% {
+    color: $color-principal;
+    opacity: 0;
+  }
+  60% {
+    color: $color-principal;
+    opacity: 0.2;
+  }
+  70% {
+    color: $color-principal;
+    opacity: 0.4;
+  }
+  80% {
+    color: $color-principal;
+    opacity: 0.6;
+  }
+  90% {
+    color: $color-principal;
+    opacity: 0.8;
+  }
+  100% {
+    color: $color-principal;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,38 @@
+/*==================== BASE > BASE Y TYPOS ====================*/
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: $fuente-base;
+  color: $color-principal;
+  background-color: $color-primero;
+  background-image: radial-gradient($color-segundo 1px, transparent 1px);
+  background-position: 0px 0px, 25px 25px;
+  background-size: 30px 30px;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: $color-principal;
+    font-size: 3.4rem - $i/2.5;
+    @if $i == 1 {
+      letter-spacing: 3px;
+    } @else if $i == 2 {
+      letter-spacing: 2px;    
+    } @else if $i == 3 {
+      letter-spacing: 2px;
+      text-shadow: $text-shadow1;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

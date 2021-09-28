@@ -1,0 +1,26 @@
+/*==================== COMPONENTS > CONTENEDORES ====================*/
+
+.caja {
+  text-align: center;
+  // background-color: $color-primero;
+  background-position: 0px 0px, 25px 25px;
+  background-size: 30px 30px;
+  // border: 1px solid white;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.caja--redondeada {
+  border-radius: 15px;
+  // border: 1px solid white;
+}
+
+.caja--principal {
+  background-color: $color-tercero;
+  background-image: radial-gradient($color-cuarto 1px, transparent 1px);
+}
+
+.caja--secundaria {
+  background-color: $color-quinto;
+  background-image: radial-gradient($color-sexto 1px, transparent 1px);
+}

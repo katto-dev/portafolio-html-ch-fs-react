@@ -1,0 +1,13 @@
+/*==================== COMPONENTS > DIVISORS ====================*/
+
+.hr {
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    $color-octavo,
+    $color-tercero,
+    $color-octavo
+  );
+  margin: 1px 0;
+  padding: 1px 0;
+}

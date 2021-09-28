@@ -1,0 +1,15 @@
+/*==================== COMPONENTS > TEXTS ====================*/
+
+.texto {
+  font-size: calc(1rem + 0.5vw);
+}
+.texto--blanco {
+  color: white;
+}
+.texto--negro {
+  color: black;
+}
+
+.texto--resaltado {
+  color: $color-resaltado3;
+}

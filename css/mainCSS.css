@@ -1,0 +1,500 @@
+@charset "UTF-8";
+/*==================== UTILITIES > VARIABLES ====================*/
+/*==================== UTILITIES > FUNCTIONS ====================*/
+/*==================== UTILITIES > MIXINS ====================*/
+/*==================== BASE > BASE Y TYPOS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: Arial;
+  color: #ffffff;
+  background-color: #301934;
+  background-image: radial-gradient(#502a57 1px, transparent 1px);
+  background-position: 0px 0px, 25px 25px;
+  background-size: 30px 30px; }
+
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 3px; }
+
+h2 {
+  color: #ffffff;
+  font-size: 2.6rem;
+  letter-spacing: 2px; }
+
+h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 1px #aaa, 1px -1px 1px #ddd, -1px 1px 1px #ddd, 1px 1px 1px #eee; }
+
+h4 {
+  color: #ffffff;
+  font-size: 1.8rem; }
+
+h5 {
+  color: #ffffff;
+  font-size: 1.4rem; }
+
+h6 {
+  color: #ffffff;
+  font-size: 1rem; }
+
+a {
+  text-decoration: none; }
+
+/*==================== LAYOUT > GRID ====================*/
+/*==================== LAYOUT > HEADER ====================*/
+/*---------- GRADIENTES ----------*/
+.header {
+  background-image: linear-gradient(#432349, #301934);
+  min-height: 64px; }
+
+/*==================== LAYOUT > NAVIGATIONS ====================*/
+/*---------- DROPDOWN MENU ----------*/
+.dropdown-menu {
+  background-color: #673d6e; }
+
+.dropdown-item {
+  color: #ffffff; }
+
+.dropdown-divider {
+  color: #ffffff; }
+
+/*==================== LAYOUT > FOOTER ====================*/
+/*---------- GRADIENTES ----------*/
+.footer {
+  background-image: linear-gradient(#301934, #432349);
+  min-height: 64px; }
+
+/*==================== COMPONENTS > CONTENEDORES ====================*/
+.caja {
+  text-align: center;
+  background-position: 0px 0px, 25px 25px;
+  background-size: 30px 30px;
+  margin: 30px auto;
+  padding: 30px; }
+
+.caja--redondeada {
+  border-radius: 15px; }
+
+.caja--principal {
+  background-color: #432349;
+  background-image: radial-gradient(#783f83 1px, transparent 1px); }
+
+.caja--secundaria {
+  background-color: #673d6e;
+  background-image: radial-gradient(#8b6c91 1px, transparent 1px); }
+
+/*==================== COMPONENTS > BUTTONS ====================*/
+.boton {
+  display: inline-flex;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem; }
+
+.boton--principal {
+  color: #ffffff;
+  background-color: #d11c54;
+  border-color: #d11c54; }
+
+.boton--principal:hover {
+  color: #ffffff;
+  background-color: #940f39;
+  border-color: #940f39; }
+
+.boton--secundario {
+  color: #000000;
+  background-color: #ffc107;
+  border-color: #ffc107; }
+
+.boton--secundario:hover {
+  color: #ffffff;
+  background-color: #a57c01;
+  border-color: #a57c01; }
+
+.boton__texto {
+  font-weight: 600; }
+
+/*==================== COMPONENTS > DIVISORS ====================*/
+.hr {
+  border: 0;
+  background-image: linear-gradient(to right, #ad6db9, #432349, #ad6db9);
+  margin: 1px 0;
+  padding: 1px 0; }
+
+/*==================== COMPONENTS > ICONS ====================*/
+.icono {
+  color: #ffffff;
+  line-height: 1rem;
+  text-decoration: none; }
+
+.icono--linkedin:hover {
+  color: #0a66c2;
+  text-decoration: none; }
+
+.icono--instagram:hover {
+  color: #c92b83;
+  text-decoration: none; }
+
+.icono--twitter:hover {
+  color: #1d9bf0;
+  text-decoration: none; }
+
+/*==================== COMPONENTS > PINS ====================*/
+.pin {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  margin-bottom: 5px;
+  padding: 0.55em 0.85em; }
+
+.pin--html {
+  background-color: #dd4b25; }
+
+.pin--css {
+  background-color: #006db4; }
+
+.pin--js {
+  background-color: #efd81d; }
+
+.pin--react {
+  background-color: #5ed3f3; }
+
+.pin--php {
+  background-color: #7377ad; }
+
+.pin--python {
+  background-color: #356c9b; }
+
+.pin--gql {
+  background-color: #de33a6; }
+
+.pin--apollo {
+  background-color: #280b9b; }
+
+.pin--node {
+  background-color: #54a144; }
+
+.pin--git {
+  background-color: #e94e31; }
+
+.pin--mongo {
+  background-color: #12924f; }
+
+.pin--mysql {
+  background-color: #006d90; }
+
+/*==================== COMPONENTS > TEXTS ====================*/
+.texto {
+  font-size: calc(1rem + 0.5vw); }
+
+.texto--blanco {
+  color: white; }
+
+.texto--negro {
+  color: black; }
+
+.texto--resaltado {
+  color: #ffc107; }
+
+/*==================== COMPONENTS > TITLES ====================*/
+.titulo {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  padding-bottom: 10px; }
+
+.titulo--principal {
+  font-size: calc(2rem + 1vw); }
+
+.titulo--secundario {
+  font-size: calc(1.5rem + 1vw); }
+
+.titulo--terciario {
+  font-size: calc(1.1rem + 1vw); }
+
+.titulo--resaltado {
+  color: #d11c54;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+/*---------- ANIMACIONES ----------*/
+h1 {
+  animation-duration: 5s;
+  animation-name: aparecerH1;
+  animation-iteration-count: infinite; }
+
+h2 {
+  animation-duration: 5s;
+  animation-name: aparecerH2;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecerH1 {
+  0% {
+    color: #ffffff;
+    opacity: 1; }
+  25% {
+    color: #ffffff;
+    opacity: 0.5; }
+  50% {
+    color: #ffffff;
+    opacity: 1; }
+  75% {
+    color: #ffffff;
+    opacity: 0.5; }
+  100% {
+    color: #ffffff;
+    opacity: 1; } }
+
+@keyframes aparecerH2 {
+  0% {
+    color: #ffffff;
+    opacity: 1; }
+  10% {
+    color: #ffffff;
+    opacity: 0.8; }
+  20% {
+    color: #ffffff;
+    opacity: 0.6; }
+  30% {
+    color: #ffffff;
+    opacity: 0.4; }
+  40% {
+    color: #ffffff;
+    opacity: 0.2; }
+  50% {
+    color: #ffffff;
+    opacity: 0; }
+  60% {
+    color: #ffffff;
+    opacity: 0.2; }
+  70% {
+    color: #ffffff;
+    opacity: 0.4; }
+  80% {
+    color: #ffffff;
+    opacity: 0.6; }
+  90% {
+    color: #ffffff;
+    opacity: 0.8; }
+  100% {
+    color: #ffffff;
+    opacity: 1; } }
+
+/*==================== PAGES > HOME ====================*/
+/*-------------------- SECCION INICIO --------------------*/
+/*---------- FRASE ----------*/
+.frase {
+  text-align: center;
+  margin: 20px 0; }
+
+.frase__texto {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: calc(3rem + 3vw);
+  text-transform: uppercase;
+  margin: 30px auto; }
+
+/*----- TEXTOS RESALTADOS -----*/
+.frase__texto--resaltado-out {
+  display: inline-block;
+  background-color: #d11c54;
+  margin: auto;
+  padding: 0px 10px; }
+
+.frase__texto--resaltado-in {
+  display: inline-block;
+  color: #d11c54;
+  margin: auto;
+  padding: 0px 10px; }
+
+/*----- SALUDO -----*/
+.frase__saludo {
+  color: #ffffff;
+  font-size: calc(1rem + 1vw);
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 30px auto; }
+
+.frase__saludo--resaltado {
+  display: inline-block;
+  color: #000000;
+  font-weight: 600;
+  background-color: #ffc107;
+  margin: auto;
+  padding: 0px 5px; }
+
+/*------------------------------ SECCION PROYECTO DESTACADO + ULTIMOS PROYECTOS ------------------------------*/
+/*---------- CARD BOOTSTRAP PERSONALIZADA ----------*/
+.card-effect:hover .card-img-filter {
+  filter: brightness(1); }
+
+.card-img-filter {
+  filter: brightness(0.6); }
+
+/*------------------------------ SECCION ULTIMOS PROYECTOS ------------------------------*/
+/*---------- TARJETA ----------*/
+.tarjeta {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.tarjeta__contenido {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.tarjeta__contenido--centrado {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.tarjeta__imagen {
+  min-width: 425px;
+  max-width: 425px;
+  width: calc(20rem + 1.5vw);
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 0px 5px; }
+
+/*---------- TRANSFORMACIONES ----------*/
+.tarjeta__imagen--agranda {
+  transition: all 0.3s ease-in-out; }
+
+/*---------- TRANSICIONES ----------*/
+.tarjeta__imagen--agranda:hover {
+  transform: scale(1.1); }
+
+/*==================== PAGES > PORFOLIO ====================*/
+/*-------------------- SECCION PORTAFOLIO --------------------*/
+/*==================== PAGES > ABOUT ====================*/
+/*-------------------- SECCION SOBRE MI --------------------*/
+.imagen--carnet {
+  height: calc(16rem + 1.1vh);
+  width: auto;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 20px; }
+
+/*==================== PAGES > ABOUT ====================*/
+/*-------------------- SECCION SOBRE MI --------------------*/
+/*==================== THEMES > THEME ====================*/
+/*==================== THEMES > ADMIN ====================*/
+/*
+----------------------------
+# PASOS PREVIOS IMPORTANTES:
+----------------------------
+1) Ejecutar "npm init", para que se cree el archivo "package.json" (desde la raiz del proyecto): 
+    $ npm init
+2) Instalar los módulos "node-sass" y "nodemon" (desde la raiz del proyecto): 
+    $ npm install -D node-sass nodemon
+3) Crear las carpetas SCSS y CSS y sus archivos respectivos.
+4) Edita el archivo "package.json" e inserta las lineas "build-css" y "watch-css" dentro de "scripts":
+--- Código modificado ---
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/sass.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+---
+5) Ejecutar "npm run watch-css", para que el compilador se quede mirando las modificaciones en el archivo ".scss".
+  $ npm run watch-css
+-----------------------------------
+# COMO RECREAR LOS MODULOS DE NODE:
+-----------------------------------
+a) Ejecutar "npm install", desde la raiz del proyecto (donde se ubica el archivo "package.json"):
+  $ npm install
+------------------------------------------------
+# COMO ORGANIZAR LOS ARCHIVOS SASS DEL PROYECTO:
+------------------------------------------------
+sass/
+|
+|– utilities/
+|   |– _variables.sass    // Variables
+|   |– _functions.sass    // Funciones
+|   |– _mixins.sass       // Mixins
+|   |– _placeholders.sass // Placeholders
+|
+|– base/
+|   |– _base.sass         // Base
+|   |– _reset.sass        // Reset/normalize
+|   |– _typo.sass         // Tipografías
+|
+|– components/
+|   |– _buttons.scss      // Buttons
+|   |– _jumbo.sass        // Jumbo
+|   |- _carousel.scss     // Carousel
+|   |- _thumbnails.scss   // Thumbnails
+|   |- _slider.scss       // Slider
+|
+|– layout/
+|   |– _grid.sass         // Grid
+|   |– _header.sass       // Header
+|   |– _navigation.sass   // Navegación
+|   |– _footer.sass       // Footer
+|   |– _forms.sass        // Formularios
+|   |- _sidebar.scss      // Sidebar
+|
+|– pages/
+|   |– _home.sass         // Estilos de la página de inicio
+|   |- _about.scss        // About styles
+|   |– _contact.sass      // Estilos de la página de contacto
+|
+|– themes/
+|   |– _theme.sass        // Default theme
+|   |– _admin.sass        // Admin theme
+|
+|– vendors/
+|   |– _normalize.sass    // Normalize
+|   |– _bootstrap.sass    // Bootstrap
+|   |– _jquery-ui.sass    // jQuery UI
+|   |– _select2-ui.sass    // Select 2
+|
+|– main.sass              // Archivo principal
+
+# En el archivo principal deberemos importar cada archivo:
+
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'utilities/bootstrap';
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typo';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/jumbo';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+*/

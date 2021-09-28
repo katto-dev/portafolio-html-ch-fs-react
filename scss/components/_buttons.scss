@@ -1,0 +1,40 @@
+/*==================== COMPONENTS > BUTTONS ====================*/
+
+.boton {
+  display: inline-flex;
+  color: $color-principal;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.boton--principal {
+  color: $color-principal;
+  background-color: $color-resaltado1;
+  border-color: $color-resaltado1;
+}
+.boton--principal:hover {
+  color: $color-principal;
+  background-color: $color-resaltado2;
+  border-color: $color-resaltado2;
+}
+
+.boton--secundario {
+  color: $color-secundario;
+  background-color: $color-resaltado3;
+  border-color: $color-resaltado3;
+}
+.boton--secundario:hover {
+  color: $color-principal;
+  background-color: $color-resaltado4;
+  border-color: $color-resaltado4;
+}
+
+.boton__texto {
+  font-weight: 600;
+}

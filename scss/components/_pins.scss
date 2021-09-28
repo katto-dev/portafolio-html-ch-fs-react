@@ -1,0 +1,35 @@
+/*==================== COMPONENTS > PINS ====================*/
+
+.pin {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  margin-bottom: 5px;
+  padding: 0.55em 0.85em;
+}
+
+$pines: (
+  html:   #dd4b25,
+  css:    #006db4,
+  js:     #efd81d,
+  react:  #5ed3f3,
+  php:    #7377ad,
+  python: #356c9b,
+  gql:    #de33a6,
+  apollo: #280b9b,
+  node:   #54a144,
+  git:    #e94e31,
+  mongo:  #12924f,
+  mysql:  #006d90
+);
+
+@each $tech, $color in $pines {
+  .pin--#{$tech} {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,7 @@
+# Permitir solo el bot de Google
+
+User-agent: Google
+Disallow:
+
+User-agent: *
+Disallow: /
