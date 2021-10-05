@@ -129,6 +129,11 @@ a {
 .boton__texto {
   font-weight: 600; }
 
+/*==================== COMPONENTS > CHECKBOXES ====================*/
+.form-check-input:checked {
+  background-color: #d11c54;
+  border-color: #940f39; }
+
 /*==================== COMPONENTS > DIVISORS ====================*/
 .hr {
   border: 0;
