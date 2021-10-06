@@ -93,6 +93,11 @@ a {
   background-color: #673d6e;
   background-image: radial-gradient(#8b6c91 1px, transparent 1px); }
 
+.fondo-apagado {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 10px 30px; }
+
 /*==================== COMPONENTS > BUTTONS ====================*/
 .boton {
   display: inline-flex;
